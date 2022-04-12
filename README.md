@@ -26,3 +26,5 @@ For a complete example, see https://github.com/reupen/columns_ui/tree/master/.gi
 ## Notes
 
 The logger currently logs all warnings and errors. This may not be suitable if your project has a large number of warnings.
+
+Additionally, GitHub Actions has [limits on annotations including a limit of 10 warning and 10 error annotations per step](https://github.community/t/annotation-limitation/17998/2).
