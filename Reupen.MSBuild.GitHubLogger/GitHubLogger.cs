@@ -42,13 +42,13 @@ namespace Reupen.MSBuild.GitHubLogger
         private static void EventSource_ErrorRaised(object sender, BuildErrorEventArgs e)
         {
             var line = FormatEvent("error", e.File, e.LineNumber, e.EndLineNumber, e.ColumnNumber, e.EndColumnNumber, e.Code, e.Message);
-            Console.WriteLine(line, e);
+            Console.WriteLine(line);
         }
 
         private static void EventSource_WarningRaised(object sender, BuildWarningEventArgs e)
         {
             var line = FormatEvent("warning", e.File, e.LineNumber, e.EndLineNumber, e.ColumnNumber, e.EndColumnNumber, e.Code, e.Message);
-            Console.WriteLine(line, e);
+            Console.WriteLine(line);
         }
     }
 }
